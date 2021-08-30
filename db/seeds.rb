@@ -11,7 +11,8 @@ Post.destroy_all
 30.times do
   Post.create(
   title:Faker::Vehicle.car_type,
-  content:Faker::Lorem.sentence(word_count: 3, supplemental: true)
+  content:Faker::Lorem.sentence(word_count: 3, supplemental: true),
+  user_id: 1
   )
 end
 
